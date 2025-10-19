@@ -16,7 +16,11 @@ if (require.main === module) {
         console.log(`Server running on port ${PORT}.\n`+
             `Also, this procedure was part of QuoteAPI exercise by Haaga-Helia,\n`
             +`developed by Juha Hinkkula and Teemu Havulinna.\n`
-            +`The exercise was then completed by Kaj Jansson.`);
+            +`The exercise was then completed by Kaj Jansson.\n\n`
+            +`Additionally, the newer versions of the app should be deployed\n`
+            +`after the linting and testing are passed,\n`
+            +`and newest release is published, starting with 1.3.0.`
+        );
     });
 }
 
