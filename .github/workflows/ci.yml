@@ -1,1 +1,19 @@
-# All workflows here.
+# All necessary workflows from the part 1.
+
+name: QuoteAPI CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkot the code
+      uses: actions/checkout@v2
+      
+    - name: Run tests
+      run: npm test
