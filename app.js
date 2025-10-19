@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 3000;
 
 if (require.main === module) {
     app.listen(PORT,()=>{
-        console.log(`Server running on port ${PORT}`);
+        console.log(`Server running on port ${PORT}.\n`+
+            `Also, this procedure was part of QuoteAPI exercise by Haaga-Helia,\n`+
+            `developed by student Kaj Peter Jansson`);
     });
 }
 
