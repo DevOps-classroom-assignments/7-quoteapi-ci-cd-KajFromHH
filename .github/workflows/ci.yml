@@ -1,6 +1,6 @@
 # All necessary workflows from the part 1.
 
-name: QuoteAPI CI
+name: CI
 
 on:
   push:
