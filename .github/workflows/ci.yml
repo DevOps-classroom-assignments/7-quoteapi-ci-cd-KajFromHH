@@ -12,8 +12,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkot the code
-      uses: actions/checkout@v2
-      
-    - name: Run tests
+    - name: Checkout the Github repository
+      uses: actions/checkout@v5
+    - name: Configuring Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: '24'
+    - name: Installing dependencies
+      run: npm ci  
+    - name: Linting
+      run: npm run lint
+    - name: Running tests
       run: npm test
